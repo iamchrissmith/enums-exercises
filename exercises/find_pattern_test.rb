@@ -38,7 +38,7 @@ class FindPatternTest < Minitest::Test
     words = ["piglet", "porridge", "bear", "blueberry"]
     found = nil
     words.each do |word|
-      found == true if word.length >= 3
+      found = true if word.length == 3
     end
     assert_nil found
   end
